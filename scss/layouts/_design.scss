@@ -8,6 +8,11 @@ main {
     background-color: white;
     border-radius: f.rem(16);
     margin-bottom: f.rem(16);
+    transition: width 1s ease;
+
+    @include bp.breakpointMin(medium) {
+        width: f.rem(400);
+    }
 }
 
 .hero {
