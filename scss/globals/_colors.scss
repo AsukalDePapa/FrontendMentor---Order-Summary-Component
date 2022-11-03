@@ -1,0 +1,30 @@
+:root {
+    // --background image
+    --desktop-bg: url(../images/pattern-background-desktop.svg);
+    --mobile-bg: url(../images/pattern-background-mobile.svg);
+    // --color pallete
+    --bg-clr: hsl(225, 100%, 94%);
+    --card-clr: hsl(245, 75%, 52%);
+    --plan-clr: hsl(0, 45%, 98%);
+
+    // texts
+    --head-txt-clr:  hsl(223, 47%, 23%);
+    --sub-txt-clr: hsl(224, 23%, 55%);
+    --plan-txt-clr:  hsl(223, 47%, 23%);
+    --plan-sub-txt-clr: hsl(224, 23%, 55%);
+
+    // buttons
+    --change-btn-clr: hsl(245, 75%, 52%);
+    --change-hover-btn-clr: hsl(245, 95%, 74%);
+    --btn-clr: hsl(245, 75%, 52%);
+    --btn-txt-clr: hsl(0, 0%, 96%);
+    --hover-btn-clr: hsl(245, 95%, 74%);
+    --cancel-btn-clr: hsl(224, 23%, 55%);
+    --cancel-hover-clr: hsl(0, 0%, 14%);
+
+    // box shadow
+    --box-shadow: 10px 10px 0 0 hsl(225, 100%, 94%);
+
+    // link
+    --txt-clr: hsl(245, 75%, 52%);
+}

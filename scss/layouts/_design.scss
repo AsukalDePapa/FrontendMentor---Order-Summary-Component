@@ -1,0 +1,117 @@
+@use '../utils/functions' as f;
+@use '../utils/breakpoints' as bp;
+
+main {
+    margin-inline: auto;
+    width: min(100%, f.rem(350));
+    height: fit-content;
+    background-color: white;
+    border-radius: f.rem(16);
+    margin-bottom: f.rem(16);
+}
+
+.hero {
+    img {
+        width: 100%;
+        border-radius: f.rem(16) f.rem(16) 0 0;
+    }
+}
+
+.description {
+    padding: f.rem(32);
+
+    h1 {
+        margin-bottom: f.rem(16);
+        font-weight: 900;
+        color: var(--head-txt-clr);
+    }
+
+    P {
+        font-weight: 500;
+        line-height: 1.4;
+        color: var(--sub-txt-clr);
+        font-weight: 500;
+        word-spacing: f.rem(2);
+        margin-bottom: f.rem(20);
+    }
+
+    .plan-description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--plan-clr);
+        padding: f.rem(16) f.rem(12);
+        gap: f.rem(20);
+        border-radius: f.rem(12);
+        margin-bottom: f.rem(20);
+
+        .plan {
+            flex-grow: 2;
+            .price {
+                font-size: f.rem(14);
+                color: var(--plan-sub-txt-clr);
+                font-weight: 700;
+            }
+            span {
+                display: block;
+                font-weight: 900;
+                color: var(--plan-txt-clr);
+                font-size: f.rem(14.3);
+                margin-bottom: f.rem(2);
+            }
+        }
+
+        .change {
+            position: relative;
+            background: none;
+            border: none;
+            font-weight: 900;
+            color: var(--change-btn-clr);
+            text-decoration: underline;
+            &:hover {
+                color: var(--change-hover-btn-clr);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proceed-to-payment {
+        color: var(--btn-txt-clr);
+        background: var(--btn-clr);
+        display: block;
+        font-weight: 900;
+        width: 100%;
+        padding: f.rem(16) 0;
+        margin-bottom: f.rem(25);
+        border: none;
+        border-radius: f.rem(10);
+        box-shadow: var(--box-shadow);
+        transition: background 300ms ease-in-out;
+
+        &:hover {
+            background: var(--hover-btn-clr);
+        }
+
+        &:focus {
+            outline: solid hsl(245, 75%, 52%) 2px;
+        }
+    }
+
+    .cancel-order {
+        background: none;
+        border: none;
+        align-self: center;
+        font-weight: 900;
+        color: var(--cancel-btn-clr);
+        transition: color 300ms ease-in;
+
+        &:hover {
+            color: var(--cancel-hover-clr);
+        }
+    }
+}
