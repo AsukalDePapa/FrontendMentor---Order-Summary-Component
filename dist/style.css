@@ -82,6 +82,12 @@ main {
   background-color: white;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  transition: width 1s ease;
+}
+@media (min-width: 37.5em) {
+  main {
+    width: 25rem;
+  }
 }
 
 .hero img {
